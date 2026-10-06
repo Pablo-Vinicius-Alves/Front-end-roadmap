@@ -1,8 +1,43 @@
-#principal {
-display: flex;
-flex-direction: column;
-width: 40%;
-border: 3px solid;
-margin: 5px;
-padding: 5px;
+
+*{
+    box-sizing: border-box;
+}
+
+#page{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 2rem;
+    width: 45rem;
+    height: 45rem;
+    border: 2px solid black;
+    border-radius: 2rem;
+}
+#princi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1.5rem;
+    width: 550px;
+}
+
+img{
+    height: 20px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: 10px;
+    height: 20rem;
+    border: 5px solid;
 }
