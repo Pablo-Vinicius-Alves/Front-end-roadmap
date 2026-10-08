@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-teste: blue;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--cor-teste);
+}
