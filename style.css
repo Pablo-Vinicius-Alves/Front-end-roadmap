@@ -1,6 +1,6 @@
 body {
     background-color: orange;
-    
+
 }
 
 * {
@@ -9,25 +9,32 @@ body {
 
 
 #page {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
     margin: 2rem;
-    width: 45rem;
-    height: 45rem;
+    width: 100%;
+    max-width: 45rem;
     border: 2px solid black;
     border-radius: 2rem;
     background-color: rgb(247, 240, 240);
-
 }
+
+@media (min-width: 768px) {
+        #page {
+            padding: 2rem;
+            margin: 2rem auto;
+            border-radius: 2rem;
+        }
+    }
 
 #princi {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90px;
-
 }
 
 #menu {
@@ -35,7 +42,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 1.5rem;
-    width: 550px;
+    width: 100%;
+    max-width: 550px;
 }
 
 img {
@@ -49,21 +57,23 @@ article {
     justify-content: center;
 }
 
-#username {
 
-    border: none;
-    border-radius: 10px;
-    height: 4.5rem;
-    width: 30rem;
-    font-size: 1.5rem;
-}
-
+#username,
 #passwrd {
     border: none;
     border-radius: 10px;
     font-size: 1.5rem;
-    height: 4.5rem;
-    width: 30rem;
+    height: 3.5rem;
+    width: 100%;
+    max-width: 35rem;
+    font-size: 1.1rem;
+}
+@media (min-width: 768px) {
+    #username,
+    #passwrd {
+        height: 4.5rem;
+        font-size: 1.5rem,
+    }
 }
 
 input {
@@ -82,15 +92,23 @@ button {
     justify-content: center;
     align-items: center;
     transition: transform 0.2s, box-shadow 0.2s;
-    margin: 35px;
-    width: 30rem;
-    height: 4rem;
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 30rem;
+    height: 3.5rem;
     border-radius: 1rem;
     color: aliceblue;
-    font-size: 1.67rem;
-    background-color: rgb(167, 167, 166);
+    font-size: 1.3rem;
+    background-color: rgb(167, 167, 167);
 }
-button:hover{
+@media (min-width: 768px) {
+    button{
+        height: 4rem;
+        font-size: 1.67rem;
+    }
+}
+
+button:hover {
     background-color: rgb(73, 70, 70);
     transform: translateY(-3px);
     box-shadow: 0 6px 16px black(0, 0, 0, 0.3);
@@ -98,7 +116,7 @@ button:hover{
 
 section {
     display: flex;
-    padding: none;
+    padding: 0;
     margin: 2.5rem;
     gap: 13rem;
     color: rgb(226, 149, 5);
