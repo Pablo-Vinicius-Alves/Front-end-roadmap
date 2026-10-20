@@ -70,7 +70,7 @@ article {
 }
 @media (min-width: 768px) {
     #username,
-    #passwrd {
+    #passwrd {  
         height: 4.5rem;
         font-size: 1.5rem,
     }
